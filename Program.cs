@@ -3,38 +3,57 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
-namespace Lab2._1
+namespace ConsoleApp2
 {
     class Program
     {
+        static bool isPrime(int n)//method for checking numbers on prime
+        {
+            if (n < 2) return false;
+            for (int i = 2; i * i <= n; i++)
+            {
+                if (n % i == 0) return false;
+            }
+            return true;
+        }
         static void Main(string[] args)
         {
-            string s;
-            s = Console.ReadLine(); //print the string
-            int i, j, flag=1;   // flag is a boolean type variable that can take the values 0 (false) or 1 (true)
-
-            for (i = 0, j = s.Length - 1; i < j; i++, j--) /* For example, word "ababa" here i=0,so it means the letter a = 0,
-                0->5-1, 0->4,1->3 so a=a polindrom*/
+            FileStream fs1 = new FileStream(@"C:\Users\user\source\repos\Problem3\Problem3\TextFile3.txt", FileMode.Open, FileAccess.Read);
+            StreamReader sr = new StreamReader(fs1);
+            //to read text file in way
+            String s = sr.ReadToEnd();
+            string[] ss = s.Split();
+            int[] a = new int[ss.Length];
+            for (int i = 0; i < a.Length; i++)
             {
-                if (s[i] == s[j])  //check true or false
-                {
-   
-                }
-                else
-                {
-                    flag = 0;
-                }
-                if (flag == 1)
-                { //if true then write yes
-                    Console.WriteLine("YES");
-                }
-                else // if false then write no
-                {
-                    Console.WriteLine("NO");
-                }
-                Console.ReadLine();
+                a[i] = int.Parse(ss[i]);//in console read elements of array
             }
+
+            FileStream fs2 = new FileStream(@"C:\Users\user\source\repos\Problem3\Problem3\TextFile4.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs2);
+            string f = "";
+            for (int i = 0; i < a.Length; i++)//checking numbers for prime
+            {
+                if (isPrime(a[i]))
+                {
+                    f += a[i] + " ";
+                }
+            }
+            sw.Write(f);
+            //write  answer to the new text file  
+
+            Console.ReadKey();
+
+            sw.Close();
+            fs2.Close();
+            sr.Close();
+            fs1.Close();
+            //close all floders
+
         }
     }
 }
+
+   
