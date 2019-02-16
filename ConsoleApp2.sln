@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2", "ConsoleApp2\ConsoleApp2.csproj", "{90DE397C-BB00-44F3-B11E-F2829FC18D58}"
+EndProject
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "Problem3", "..\Problem3\Problem3\obj\Debug\Problem3.exe", "{FC3198EB-1505-4E2C-AAE8-05A56F577DEE}"
+	ProjectSection(DebuggerProjectSystem) = preProject
+		PortSupplier = 00000000-0000-0000-0000-000000000000
+		Executable = C:\Users\user\source\repos\Problem3\Problem3\obj\Debug\Problem3.exe
+		RemoteMachine = PC
+		StartingDirectory = C:\Users\user\source\repos\Problem3\Problem3\obj\Debug
+		Environment = По умолчанию
+		LaunchingEngine = 00000000-0000-0000-0000-000000000000
+		UseLegacyDebugEngines = No
+		LaunchSQLEngine = No
+		AttachLaunchAction = No
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Debug|x86.Build.0 = Debug|Any CPU
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Release|x86.ActiveCfg = Release|Any CPU
+		{90DE397C-BB00-44F3-B11E-F2829FC18D58}.Release|x86.Build.0 = Release|Any CPU
+		{FC3198EB-1505-4E2C-AAE8-05A56F577DEE}.Debug|Any CPU.ActiveCfg = Release|x86
+		{FC3198EB-1505-4E2C-AAE8-05A56F577DEE}.Debug|x86.ActiveCfg = Release|x86
+		{FC3198EB-1505-4E2C-AAE8-05A56F577DEE}.Release|Any CPU.ActiveCfg = Release|x86
+		{FC3198EB-1505-4E2C-AAE8-05A56F577DEE}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA1582BB-C371-4108-9605-9F54D5AB3DDC}
+	EndGlobalSection
+EndGlobal
